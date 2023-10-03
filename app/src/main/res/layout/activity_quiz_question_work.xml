@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".QuizQuestionWork">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/_16sdp">
+
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="To which country does this flag belong to"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/newcolor"/>
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_margin="@dimen/_16sdp"
+            android:src="@drawable/argentina"/>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_progress_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="@dimen/_16sdp">
+
+            <ProgressBar
+                android:id="@+id/Progress_Bar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="5"
+                android:minHeight="@dimen/_50sdp"
+                android:progress="0"
+                style="?android:attr/progressBarStyleHorizontal">
+            </ProgressBar>
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:padding="@dimen/_15sdp"
+                android:text="0/10" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_option_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_default_options"
+            android:layout_margin="@dimen/_4sdp"
+            android:textSize="@dimen/_10sdp"
+            android:gravity="center"
+            android:padding="@dimen/_15sdp"
+            android:textColor="#7A8089"
+            android:text="Apple"/>
+
+        <TextView
+            android:id="@+id/tv_option_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_default_options"
+            android:layout_margin="@dimen/_4sdp"
+            android:textSize="@dimen/_10sdp"
+            android:gravity="center"
+            android:padding="@dimen/_15sdp"
+            android:textColor="#7A8089"
+            android:text="Sony"/>
+
+        <TextView
+            android:id="@+id/tv_option_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_default_options"
+            android:layout_margin="@dimen/_4sdp"
+            android:textSize="@dimen/_10sdp"
+            android:gravity="center"
+            android:padding="@dimen/_15sdp"
+            android:textColor="#7A8089"
+            android:text="BlueBerry"/>
+
+        <TextView
+            android:id="@+id/tv_option_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_default_options"
+            android:layout_margin="@dimen/_4sdp"
+            android:textSize="@dimen/_10sdp"
+            android:gravity="center"
+            android:padding="@dimen/_15sdp"
+            android:textColor="#7A8089"
+            android:text="Google"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_18sdp"
+            android:text="SUBMIT"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/_3sdp"
+            android:textStyle="bold"
+            android:backgroundTint="#9013FE"/>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
